@@ -2,6 +2,23 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(
       MaterialApp(
-        home: null,
+        home: BallPage(),
       ),
     );
+
+class BallPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.blue,
+      appBar: AppBar(
+        title: Text(
+          'Aask Me Anything'
+        ),
+        backgroundColor: Colors.blueAccent,
+      ),
+      body: Container(
+      ),
+    );
+  }
+}
